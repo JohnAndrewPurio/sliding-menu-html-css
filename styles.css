@@ -30,10 +30,10 @@
 }
 
 .step:hover {
-    --step-width: calc(40% / 3);
+    --step-width: calc(10% / 3);
 
     color: white;
-    width: 60%;
+    width: 90%;
     transform: ease-in-out;
 }
 
