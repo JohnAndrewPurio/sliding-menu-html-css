@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --greyish-blue: #34495e;
+    --orange: #e67e22;
+
+    --step-width: 25%;
+}
+
+.root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.step {
+    width: 25%;
+    height: 100%;
+    transform: ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 500ms ease-in-out;
+}
+
+.step:hover {
+    --step-width: calc(40% / 3);
+
+    color: white;
+    width: 60%;
+    transform: ease-in-out;
+}
+
+.odd {
+    background-color: var(--greyish-blue);
+    color: var(--greyish-blue);
+}
+
+.even {
+    background-color: var(--orange);
+    color: var(--orange);
+}
